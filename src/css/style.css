@@ -5,8 +5,8 @@ header {
   height: auto;
   font-size: 3rem;
   font-weight: bolder;
-  color: dodgerblue;
-  background-color: whitesmoke;
+  color: white;
+  background-color: #232323;
   padding: 10px;
 }
 
@@ -17,8 +17,8 @@ footer {
   width: 100%;
   font-size: 1rem;
   font-weight: bolder;
-  color: dodgerblue;
+  color: white;
   position: absolute;
-  background-color: whitesmoke;
+  background-color: #232323;
   padding: 10px;
 }

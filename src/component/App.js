@@ -58,8 +58,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Header />
+        <hr />
         <Container>
           <Row>
             <Col
@@ -77,7 +78,7 @@ class App extends Component {
                 />
                 <InputGroup.Append>
                   <Button
-                    variant="primary"
+                    variant="secondary"
                     size="lg"
                     onClick={() => this.addTask()}
                   >
@@ -102,7 +103,7 @@ class App extends Component {
                     <ListGroup.Item variant="light" action>
                       {item.value}
                       <Button
-                        variant="primary"
+                        variant="warning"
                         size="lg"
                         onClick={() => this.editTask(item.id)}
                         style={{ float: "right", margin: "2px" }}
@@ -110,7 +111,7 @@ class App extends Component {
                         Edit
                       </Button>
                       <Button
-                        variant="primary"
+                        variant="success"
                         size="lg"
                         onClick={() => this.deleteTask(item.id)}
                         style={{ float: "right", margin: "2px" }}
@@ -125,7 +126,7 @@ class App extends Component {
           </Row>
         </Container>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }
